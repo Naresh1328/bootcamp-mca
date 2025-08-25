@@ -1,14 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Landing Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    
 </head>
 <body>
-    <script>
-        c
-    </script>
     
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        #mini img{
+
+            height: 10%;
+            width: 150px;
+            opacity: 0.5;
+        }
+            
+        #mini{
+            display: flex;
+            position: absolute;
+            bottom: 40px;
+            right: 10px ;
+        }
+
+
+        #arrow1{
+            position: absolute;
+            top: 50%;
+            right: 0;
+            height: 50px;
+            width: 100px;
+        
+            
+            
+
+        }
+        #arrow2{
+            position: absolute;
+            top: 50%;
+            left: 0;
+            height: 50px;
+            width: 100px;
+            rotate: 180deg;
+        }
+        
+        #container {
+           background-image: url("assets/img1.jpg");
+           height: 100vh;
+           width: 100%;
+           
+           background-size: cover;
+           background-repeat: no-repeat;
+           position: relative;
+        }
+    </style>
+    <div id="container">
+        <div class = "arrow">
+            <img id ="arrow1" onclick="changeimg()" src="assets/right-arrow.png" style="cursor: pointer;" >
+            <img id ="arrow2" onclick="changebackimg()"  src="assets/right-arrow.png" style="cursor: pointer;">
+        </div>
+        <div id="mini">
+            <img src="assets/img2.jpg" alt="">
+            <img src="assets/img3.jpg" alt="">
+            <img src="assets/img4.jpg" alt="">
+            <img src="assets/img5.jpg" alt="">
+            <img src="assets/img6.jpg" alt="">
+
+        </div>
+    </div>
+    <script src='javascript.js'></script>
 </body>
 </html>
